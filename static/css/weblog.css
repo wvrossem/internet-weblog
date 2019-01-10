@@ -25,8 +25,9 @@ img {
 
 blockquote {
   background-color: #F0F2F5;
-  color: #999999;
+  /* color: #999999; */
   padding: 5px;
+  text-align: justify;
 }
 
 blockquote p {
@@ -36,7 +37,7 @@ blockquote p {
 
 blockquote p:last-child {
   font-style: normal;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 
 }
 
@@ -71,7 +72,7 @@ header h1 {
 article > ul > li {
   font-size: 18px;
   line-height: 28px;
-  color: #5B636E;
+  /* color: #5B636E; */
 }
 
 /* Navigation */
@@ -127,7 +128,7 @@ nav ul > li {
 }
 
 .micropost > p, .post > p, .page > p {
-  color: #666666;
+  /* color: #666666; */
   font-size: 18px;
   line-height: 28px;
   margin: 0;
