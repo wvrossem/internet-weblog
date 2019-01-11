@@ -6,6 +6,11 @@ body {
   line-height: 24px;
 }
 
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+}
+
 a[href] {
 	color: #476286;
 	text-decoration: none;
@@ -113,6 +118,17 @@ nav ul > li {
   color: #dddddd;
 }
 
+#tag-cloud {
+  margin: 40px auto;
+  padding: 10px;
+  max-width: 780px;
+  font-size: 20%;
+}
+
+#tag-cloud a {
+  padding: 3px;
+}
+
 /* Articles */
 
 .micropost {
@@ -145,8 +161,14 @@ nav ul > li {
   margin: 0;
 }
 
+.micropost > .tags {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+}
+
 .micropost p > a, .post p > a {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .post h2 {
@@ -206,6 +228,13 @@ article .postmeta {
 	color: #999999;
   margin: 0 auto;
 	padding: 5px 0 0 0;
+}
+
+article .micropostmeta {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+  display: inline;
 }
 
 .post-group {
@@ -367,3 +396,14 @@ and (max-width: 780px) {
     width: 100%;
   }
 }
+
+/* Code Boxes */
+pre {
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 5px #eee;
+  background: #f8f8f8;
+  padding: 1em;
+  overflow-x: auto;
+}
+code { background: #f9f9f9; }
+pre code { background: none; }

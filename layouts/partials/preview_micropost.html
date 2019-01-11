@@ -32,6 +32,17 @@
     {{ end }}
   {{ else }}
     {{ .Content }}
-    <a href='{{ .Permalink }}'><aside class="dates">→ {{ .Date.Format "2006/01/02 3:04 PM" }}</aside></a>
+    <div class="micropostmeta">
+      <a href='{{ .Permalink }}'><span class="dates">→ {{ .Date.Format "2006/01/02 3:04 PM" }}</span></a>
+      {{ if (isset .Params "tags") }}
+
+        <span class="tags dates">
+          <i class="fas fa-tags"></i>
+          {{ range $i, $v := .Params.tags }}
+            <a href="/tags/{{ $v | urlize }}"> {{ $v }}</a>{{ if ne (len $.Params.tags) (add $i 1) }}, {{ end }}
+          {{ end }}
+        </span>
+      {{ end }}
+    </div>
   {{ end }}
 </article>

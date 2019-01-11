@@ -5,6 +5,10 @@
 
   {{ partial "yearly_grouping.html" . }}
 
+{{ else if isset .Site.Params "micropoststagcloud" | and ( .Site.Params.micropoststagcloud ) }}
+
+  {{ partial "tagcloud_microposts.html" . }}
+
 {{ else }}
 
   {{ partial "default_list.html" . }}
