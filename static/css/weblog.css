@@ -29,21 +29,22 @@ img {
 }
 
 blockquote {
-  background-color: #F0F2F5;
-  /* color: #999999; */
-  padding: 5px;
+  /* background-color: #F0F2F5; */
+  color: #476286;
+  /* padding: 5px; */
   text-align: justify;
+
 }
 
 blockquote p {
   font-style: italic;
   padding: 0 10px;
+  border-left: 2px solid #476286;
 }
 
 blockquote p:last-child {
   font-style: normal;
   /* padding-left: 30px; */
-
 }
 
 .site {
@@ -55,6 +56,12 @@ blockquote p:last-child {
 
 .content {
   flex: 1;
+}
+
+figcaption {
+  font-weight: normal;
+  font-style: italic;
+  line-height:
 }
 
 /* Header */
@@ -149,6 +156,10 @@ nav ul > li {
   line-height: 28px;
   margin: 0;
   text-align: justify;
+}
+
+.page > p {
+  margin: 20px auto;
 }
 
 .post > p {
