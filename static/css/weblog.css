@@ -33,17 +33,16 @@ blockquote {
   color: #476286;
   /* padding: 5px; */
   text-align: justify;
-
 }
 
 blockquote p {
-  font-style: italic;
+  /* font-style: italic; */
   padding: 0 10px;
   border-left: 2px solid #476286;
 }
 
 blockquote p:last-child {
-  font-style: normal;
+  /* font-style: normal; */
   /* padding-left: 30px; */
 }
 
